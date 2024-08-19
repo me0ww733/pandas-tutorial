@@ -1,0 +1,20 @@
+[project]
+authors = [{name = "me0ww", email = "mewww733@gmail.com"}]
+dependencies = []
+description = "Add a short description here"
+name = "pandas-tutorial"
+requires-python = ">= 3.11"
+version = "0.1.0"
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[tool.pixi.pypi-dependencies]
+pandas-tutorial = { path = ".", editable = true }
+
+[tool.pixi.tasks]
